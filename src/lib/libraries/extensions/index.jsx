@@ -46,6 +46,9 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import squareIconURL from './square/square.png';
+import squareInsetIconURL from './square/square-small.svg';
+
 export default [
     {
         name: (
@@ -317,5 +320,26 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
-    }
+    },
+    
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Square"
+                description="Name for the 'Square' extension"
+                id="gui.extension.newblocks.name"
+            />
+        ),
+        extensionId: 'square',
+        iconURL: squareIconURL,
+        insetIconURL: squareInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Square Block created by rachit"
+                description="Description for the 'Square' extension"
+                id="gui.extension.square.description"
+            />
+        ),
+        featured: true
+    },
 ];
