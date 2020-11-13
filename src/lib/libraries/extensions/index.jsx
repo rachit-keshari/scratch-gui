@@ -49,6 +49,12 @@ import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 import squareIconURL from './square/square.png';
 import squareInsetIconURL from './square/square-small.svg';
 
+import PictoBloxMathIconURL from './PictoBloxMath/PictoBloxMath.png';
+import PictoBloxMathInsetIconURL from './PictoBloxMath/PictoBloxMath-small.svg';
+
+import PictoBloxStringIconURL from './PictoBloxString/PictoBloxString.png';
+import PictoBloxStringInsetIconURL from './PictoBloxString/PictoBloxString-small.svg';
+
 export default [
     {
         name: (
@@ -341,5 +347,46 @@ export default [
             />
         ),
         featured: true
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="PictoBloxMath"
+                description="Name for the 'PictoBloxMath' extension"
+                id="gui.extension.PictoBloxMath.name"
+            />
+        ),
+        extensionId: 'pictobloxmath',
+        iconURL: PictoBloxMathIconURL,
+        insetIconURL: PictoBloxMathInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="new extension for Square and Square root"
+                description="Description for the 'PictoBloxMath' extension"
+                id="gui.extension.PictoBloxMath.description"
+            />
+        ),
+        featured: true,
+    },
+    
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="PictoBloxString"
+                description="Name for the 'PictoBloxString' extension"
+                id="gui.extension.PictoBloxString.name"
+            />
+        ),
+        extensionId: 'pictobloxstring',
+        iconURL: PictoBloxStringIconURL,
+        insetIconURL: PictoBloxStringInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="new extension for String"
+                description="Description for the 'PictoBloxString' extension"
+                id="gui.extension.PictoBloxString.description"
+            />
+        ),
+        featured: true,
     },
 ];
